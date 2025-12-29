@@ -1,0 +1,78 @@
+# Shield AI — Ethics & Privacy
+
+Shield is built on the principle that
+**technology should increase human agency, not replace it.**
+
+This document defines the ethical boundaries of the system.
+
+---
+
+## Core Ethical Principles
+
+### 1. User Sovereignty
+
+- The user owns their data
+- The user controls visibility
+- The user can disable or delete data at any time
+
+Shield exists to serve the user — not to guide, shape, or optimize them for external goals.
+
+---
+
+### 2. Privacy by Design
+
+- No long-term storage of raw content
+- No selling or sharing of user data
+- Behavioral signals are abstracted, not recorded verbatim
+- Sensitive inference is local whenever possible
+
+Shield does not monetize attention.
+Shield protects it.
+
+---
+
+### 3. Psychological Safety
+
+Shield does **not**:
+- Diagnose mental illness
+- Replace therapy
+- Provide medical or legal advice
+
+Guardian responses are reflective, not authoritative.
+
+When distress signals exceed safe thresholds,
+Shield is designed to recommend **external human support**.
+
+---
+
+### 4. No Behavioral Manipulation
+
+Shield never:
+- Nudges for engagement
+- Pushes content for profit
+- Uses reinforcement loops to control behavior
+
+Guardian may interrupt patterns,
+but it never coerces decisions.
+
+---
+
+### 5. Transparency
+
+- Insights are explainable
+- Triggers are named
+- Patterns are surfaced, not hidden
+
+Users are told *why* something is flagged.
+
+---
+
+## Ethical Boundary Statement
+
+Shield will never:
+- Act without user consent
+- Exploit emotional vulnerability
+- Track users across devices or identities
+- Become an invisible influence system
+
+Shield exists to **undo** those systems — not copy them.
