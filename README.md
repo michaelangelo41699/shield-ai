@@ -7,6 +7,10 @@ influence their emotions, attention, and decision-making.
 Rather than censoring content, Shield focuses on reflection,
 context, and psychological insight.
 
+## Project Status
+Shield AI is an active research and development project.
+Some components are experimental and not production-ready.
+
 ## Core Components
 
 ###  Android App
