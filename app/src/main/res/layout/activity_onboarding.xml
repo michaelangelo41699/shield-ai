@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- IDEAL SELF -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Who is your ideal self?" />
+
+        <EditText
+            android:id="@+id/idealSelfInput"
+            android:hint="Describe your ideal self"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:minHeight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- GOALS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Top Life Goals" />
+
+        <EditText android:id="@+id/goal1Input" android:hint="Goal #1"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+        <EditText android:id="@+id/goal2Input" android:hint="Goal #2"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+        <EditText android:id="@+id/goal3Input" android:hint="Goal #3"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <!-- STRUGGLES / SUPPORT -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What do you currently struggle with?" />
+
+        <EditText android:id="@+id/perceivedFlawsInput" android:hint="Habits or traits to change"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What motivates you?" />
+
+        <EditText android:id="@+id/motivationInput" android:hint="Pain, passion, purpose..."
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Major life events or trauma?" />
+
+        <EditText android:id="@+id/traumaInput" android:hint="Optional"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What helps you cope?" />
+
+        <EditText android:id="@+id/copingInput" android:hint="Strategies or strengths"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <!-- PEACE -->
+        <TextView android:text="🕊 Peace"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
+        <EditText android:id="@+id/peaceDefinitionInput" android:hint="What does peace mean to you?"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+        <EditText android:id="@+id/peaceChallengeInput" android:hint="What makes peace hard to achieve?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/peaceTriggersInput" android:hint="Triggers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/peaceBarriersInput" android:hint="Barriers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/peaceNonNegotiablesInput" android:hint="Non-negotiables (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/peaceRoadblocksInput" android:hint="Roadblocks (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/peaceVisionInput" android:hint="What does peace look like when fulfilled?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <SeekBar android:id="@+id/peaceImportanceSeekBar"
+            android:max="5" android:progress="3"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/peaceGuardianCheckbox" android:text="Let Guardian help me figure this out"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- CONFIDENCE -->
+        <TextView android:text="💪 Confidence"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
+        <EditText android:id="@+id/confidenceDefinitionInput" android:hint="What does confidence mean to you?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceChallengeInput" android:hint="What makes confidence hard to maintain?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceTriggersInput" android:hint="Triggers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceBarriersInput" android:hint="Barriers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceNonNegotiablesInput" android:hint="Non-negotiables (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceRoadblocksInput" android:hint="Roadblocks (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/confidenceVisionInput" android:hint="What does confidence look like when fulfilled?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <SeekBar android:id="@+id/confidenceImportanceSeekBar"
+            android:max="5" android:progress="3"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/confidenceGuardianCheckbox" android:text="Let Guardian help me figure this out"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- PASSION -->
+        <TextView android:text="🔥 Passion"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" />
+
+        <EditText android:id="@+id/passionDefinitionInput" android:hint="What does passion mean to you?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionChallengeInput" android:hint="What challenges your passion?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionTriggersInput" android:hint="Triggers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionBarriersInput" android:hint="Barriers (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionNonNegotiablesInput" android:hint="Non-negotiables (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionRoadblocksInput" android:hint="Roadblocks (comma-separated)"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <EditText android:id="@+id/passionVisionInput" android:hint="What does passion look like fulfilled?"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <SeekBar android:id="@+id/passionImportanceSeekBar"
+            android:max="5" android:progress="3"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <CheckBox android:id="@+id/passionGuardianCheckbox" android:text="Let Guardian help me figure this out"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- CONTINUE BUTTON -->
+        <Button android:id="@+id/continueButton" android:text="Continue"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

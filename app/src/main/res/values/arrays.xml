@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="time_ranges">
+            <item>Today</item>
+            <item>Last 3 Days</item>
+            <item>Last 7 Days</item>
+        </string-array>
+
+</resources>

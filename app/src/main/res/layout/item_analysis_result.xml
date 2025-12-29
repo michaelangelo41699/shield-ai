@@ -1,0 +1,35 @@
+<!-- res/layout/item_analysis_result.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- User's raw input (optional, currently unused but included to match adapter logic) -->
+    <TextView
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input text here"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <!-- Predicted label -->
+    <TextView
+        android:id="@+id/labelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp" />
+
+    <!-- Prediction confidence -->
+    <TextView
+        android:id="@+id/confidenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confidence: 0.00"
+        android:textSize="14sp"
+        android:layout_marginTop="2dp" />
+</LinearLayout>

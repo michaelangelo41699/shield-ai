@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/guardianPopupLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_guardian_dialog"
+    android:padding="20dp"
+    android:elevation="8dp">
+
+    <!-- Guardian Header -->
+    <TextView
+        android:id="@+id/popupGuardianHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardian Watch"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#2A2E5D" />
+
+    <!-- Dynamic LLM Suggestion -->
+    <TextView
+        android:id="@+id/popupGuardianMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Guardian is thinking..."
+        android:textSize="16sp"
+        android:textColor="#1B1F3B"
+        android:lineSpacingExtra="6dp" />
+
+    <!-- Suggested Actions -->
+    <LinearLayout
+        android:id="@+id/popupGuardianActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/actionRefocus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refocus Now"
+            android:textAllCaps="false"
+            android:background="@drawable/button_primary"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/actionLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remind Me Later"
+            android:layout_marginStart="8dp"
+            android:textAllCaps="false"
+            android:background="@drawable/button_secondary"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Optional Feedback Options -->
+    <LinearLayout
+        android:id="@+id/guardianFeedbackOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/feedbackPositive"
+            android:text="✅"
+            android:textSize="24sp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Helpful" />
+
+        <TextView
+            android:id="@+id/feedbackNegative"
+            android:text="❌"
+            android:textSize="24sp"
+            android:contentDescription="Not helpful" />
+    </LinearLayout>
+
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_close"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false" />
+</LinearLayout>

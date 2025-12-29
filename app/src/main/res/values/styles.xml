@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ==================== -->
+    <!-- Base Application Theme -->
+    <!-- ==================== -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Color scheme -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryContainer">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryContainer">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+
+        <!-- System bars -->
+        <item name="android:statusBarColor">?attr/colorPrimaryContainer</item>
+        <item name="android:navigationBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Component styles -->
+        <item name="buttonStyle">@style/Button.Primary</item>
+        <item name="materialButtonOutlinedStyle">@style/Button.Outlined</item>
+        <item name="dialogTheme">@style/AppDialogTheme</item>
+    </style>
+
+    <!-- ==================== -->
+    <!-- Special Purpose Themes -->
+    <!-- ==================== -->
+    <style name="Theme.Translucent" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimation.Translucent</item>
+    </style>
+
+    <!-- ==================== -->
+    <!-- Component Styles -->
+    <!-- ==================== -->
+    <!-- Text Styles -->
+    <style name="SectionLabel" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <!-- Notification Header Fallback Style -->
+    <style name="Notification.Header" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/notification_important</item>
+    </style>
+    <style name="Notification" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/notification_normal</item>
+    </style>
+
+    <style name="SectionValue" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">?attr/colorOnSurfaceVariant</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MediumComponent</item>
+        <item name="android:paddingVertical">12dp</item>
+    </style>
+
+    <style name="Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">?attr/colorOutline</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Dialog Theme -->
+    <style name="AppDialogTheme" parent="Theme.Material3.DayNight.Dialog">
+        <item name="colorSurface">@color/surface</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MediumComponent</item>
+        <item name="buttonBarPositiveButtonStyle">@style/DialogButton.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/DialogButton.Negative</item>
+    </style>
+
+    <!-- ==================== -->
+    <!-- Shape & Animation Styles -->
+    <!-- ==================== -->
+    <style name="ShapeAppearance.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="WindowAnimation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <!-- ==================== -->
+    <!-- Specialized Components -->
+    <!-- ==================== -->
+    <!-- Confidence Indicators -->
+    <style name="ConfidenceIndicator.High">
+        <item name="backgroundTint">@color/confidence_high</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ConfidenceIndicator.Medium">
+        <item name="backgroundTint">@color/confidence_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- Notification Styles -->
+    <!-- Notification Color Styles -->
+    <style name="Notification.Important" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/notification_important</item>
+    </style>
+
+    <style name="Notification.Normal" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/notification_normal</item>
+    </style>
+
+    <style name="Notification.System" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/notification_system</item>
+    </style>
+
+    <!-- Dialog Button Fallbacks -->
+    <style name="DialogButton.Positive" parent="Widget.Material3.Button">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="DialogButton.Negative" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Generic Confidence Indicator (fallback in case High/Medium aren't triggered) -->
+    <style name="ConfidenceIndicator">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/confidence_medium</item>
+    </style>
+
+    <!-- Notification.Material3 fallback -->
+    <style name="Notification.Material3">
+        <item name="android:color">@color/notification_important</item>
+    </style>
+
+    <!-- Window Animation fallback -->
+    <style name="WindowAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/influenceTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Influence: UNKNOWN"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@android:color/black"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/interruptionLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interruption: LOW"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@android:color/black"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/eventTriggerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trigger: USER_ACTION"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@android:color/black"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/outcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outcome: IGNORED"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@android:color/black"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/confidenceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confidence"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timestampText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/patternText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pattern"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sourceTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

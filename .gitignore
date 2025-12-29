@@ -1,0 +1,63 @@
+# =========================
+# Android / IntelliJ
+# =========================
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# =========================
+# Kotlin / Android builds
+# =========================
+*.apk
+*.aab
+*.dex
+
+# =========================
+# Python / Guardian AI
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+venv/
+.venv/
+
+# =========================
+# ML / Model Artifacts
+# =========================
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+models/checkpoints/
+guardian_model/
+trained_models/
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+logs/
+tmp/
+
+# =========================
+# Datasets (real data)
+# =========================
+datasets/raw/
+datasets/private/
+*.csv
+*.parquet
+
+# =========================
+# OS
+# =========================
+Thumbs.db

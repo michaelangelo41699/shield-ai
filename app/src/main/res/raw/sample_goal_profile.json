@@ -1,0 +1,26 @@
+{
+  "user_id": "user_001",
+  "life_goals": ["Live consciously", "Improve emotional intelligence", "Maintain healthy relationships"],
+  "ideal_self": "A calm, focused, and aware individual",
+  "core_values": ["Compassion", "Discipline", "Honesty"],
+  "emotional_triggers": {
+    "positive": ["Inspiring content", "Humor"],
+    "negative": ["Toxic comparisons", "Negative news"]
+  },
+  "daily_focus": "Stay mindful during phone use",
+  "demotivation_signals": ["doomscrolling", "overthinking", "self-doubt"],
+  "psych_needs": {
+    "confidence": {
+      "importance": 5,
+      "definition": "Believing in one's ability and value",
+      "challenge": "Fear of judgment",
+      "triggers": ["failure", "criticism"],
+      "barriers": ["self-doubt", "social media pressure"],
+      "non_negotiables": ["daily affirmations"],
+      "roadblocks": ["negative comparisons"],
+      "vision": "Confidence through reflection and progress"
+    }
+  }
+}
+
+

@@ -1,0 +1,363 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 4,
+    "identityHash": "f974eb451963c1cd7c0e791b6e67e4ae",
+    "entities": [
+      {
+        "tableName": "log_entries",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `text` TEXT NOT NULL, `appPackage` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `syncStatus` TEXT NOT NULL, `eventType` TEXT NOT NULL, `contextData` TEXT, `metadata` TEXT NOT NULL, `influenceType` TEXT NOT NULL, `interruptionLevel` TEXT NOT NULL, `deliveryMechanism` TEXT NOT NULL, `influenceCategory` TEXT NOT NULL, `influenceSubCategory` TEXT NOT NULL, `monetizationType` TEXT NOT NULL, `logContext` TEXT NOT NULL, `userSegment` TEXT NOT NULL, `outcome` TEXT NOT NULL, `trigger` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "text",
+            "columnName": "text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "appPackage",
+            "columnName": "appPackage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncStatus",
+            "columnName": "syncStatus",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventType",
+            "columnName": "eventType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contextData",
+            "columnName": "contextData",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "metadata",
+            "columnName": "metadata",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceType",
+            "columnName": "influenceType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "interruptionLevel",
+            "columnName": "interruptionLevel",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliveryMechanism",
+            "columnName": "deliveryMechanism",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceCategory",
+            "columnName": "influenceCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceSubCategory",
+            "columnName": "influenceSubCategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monetizationType",
+            "columnName": "monetizationType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logContext",
+            "columnName": "logContext",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userSegment",
+            "columnName": "userSegment",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outcome",
+            "columnName": "outcome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trigger",
+            "columnName": "trigger",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_log_entries_appPackage",
+            "unique": false,
+            "columnNames": [
+              "appPackage"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_log_entries_appPackage` ON `${TABLE_NAME}` (`appPackage`)"
+          },
+          {
+            "name": "index_log_entries_timestamp",
+            "unique": false,
+            "columnNames": [
+              "timestamp"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_log_entries_timestamp` ON `${TABLE_NAME}` (`timestamp`)"
+          },
+          {
+            "name": "index_log_entries_syncStatus",
+            "unique": false,
+            "columnNames": [
+              "syncStatus"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_log_entries_syncStatus` ON `${TABLE_NAME}` (`syncStatus`)"
+          },
+          {
+            "name": "index_log_entries_eventType",
+            "unique": false,
+            "columnNames": [
+              "eventType"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_log_entries_eventType` ON `${TABLE_NAME}` (`eventType`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "goal_profile",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`user_id` TEXT NOT NULL, `ideal_self` TEXT NOT NULL, `daily_focus` TEXT, `demotivation_signals` TEXT NOT NULL, `life_goals` TEXT NOT NULL, `core_values` TEXT NOT NULL, `ideal_confidence` TEXT NOT NULL, `emotional_triggers` TEXT NOT NULL, `psych_needs` TEXT NOT NULL, PRIMARY KEY(`user_id`))",
+        "fields": [
+          {
+            "fieldPath": "userId",
+            "columnName": "user_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idealSelf",
+            "columnName": "ideal_self",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dailyFocus",
+            "columnName": "daily_focus",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "demotivationSignals",
+            "columnName": "demotivation_signals",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lifeGoals",
+            "columnName": "life_goals",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "coreValues",
+            "columnName": "core_values",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "idealConfidence",
+            "columnName": "ideal_confidence",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "emotionalTriggers",
+            "columnName": "emotional_triggers",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "psychNeeds",
+            "columnName": "psych_needs",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "user_id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "guardian_insights",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `label` TEXT NOT NULL, `confidence` REAL NOT NULL, `sourceText` TEXT NOT NULL, `patternName` TEXT, `category` TEXT NOT NULL, `timestamp` INTEGER NOT NULL, `influence_type` TEXT NOT NULL, `interruption_level` TEXT NOT NULL, `delivery_mechanism` TEXT NOT NULL, `influence_category` TEXT NOT NULL, `influence_subcategory` TEXT NOT NULL, `monetization_type` TEXT NOT NULL, `log_context` TEXT NOT NULL, `user_segment` TEXT NOT NULL, `action_outcome` TEXT NOT NULL, `event_trigger` TEXT NOT NULL, `metadata` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "label",
+            "columnName": "label",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "confidence",
+            "columnName": "confidence",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sourceText",
+            "columnName": "sourceText",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "patternName",
+            "columnName": "patternName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "category",
+            "columnName": "category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timestamp",
+            "columnName": "timestamp",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceType",
+            "columnName": "influence_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "interruptionLevel",
+            "columnName": "interruption_level",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliveryMechanism",
+            "columnName": "delivery_mechanism",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceCategory",
+            "columnName": "influence_category",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "influenceSubCategory",
+            "columnName": "influence_subcategory",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "monetizationType",
+            "columnName": "monetization_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logContext",
+            "columnName": "log_context",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userSegment",
+            "columnName": "user_segment",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outcome",
+            "columnName": "action_outcome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "trigger",
+            "columnName": "event_trigger",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "metadata",
+            "columnName": "metadata",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f974eb451963c1cd7c0e791b6e67e4ae')"
+    ]
+  }
+}

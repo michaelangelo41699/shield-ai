@@ -1,0 +1,83 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">ShieldAI</string>
+
+    <!-- Section Titles -->
+    <string name="insight_title">🧠 Daily Insight Report</string>
+    <string name="notification_log_title">🧠 Notification Log</string>
+    <string name="guardian_insights">🛡️ Guardian AI Predictions</string>
+    <string name="pattern_summary">Pattern Summary</string>
+    <string name="default_ideal_self">No ideal self defined</string>
+
+    <!-- Mood Input -->
+    <string name="mood_explanation">🔍 Why we ask how you feel:\n\nShield-AI is learning *you* — how your digital life affects your thoughts, decisions, and peace of mind.\n\nYour daily mood input gives Shield-AI the foundation to reflect back meaningful insights.</string>
+    <string name="mood_input_label">How do you feel right now?</string>
+    <string name="mood_input_hint">e.g., Motivated, Tired, Overwhelmed</string>
+    <string name="mood_saved">Mood recorded successfully</string>
+
+    <!-- Buttons -->
+    <string name="generate_insight">🔍 Generate Insight</string>
+    <string name="view_summary">📊 View Daily Summary</string>
+    <string name="view_trends">📈 View Trends</string>
+    <string name="loading_insights">Analyzing your mood…</string>
+    <string name="select_time_range">Select Time Range</string>
+
+    <!-- Error Messages -->
+    <string name="error_empty_mood">Please describe your mood to receive feedback.</string>
+    <string name="no_data_available">No notification data available.</string>
+    <string name="api_error_template">⚠️ Error: %1$s (%2$d)</string>
+    <string name="invalid_mood_length">Please keep mood description under 200 characters</string>
+    <string name="no_insights_found">No insights found. Try generating more logs.</string>
+    <string name="api_error_message">Error: Guardian AI responded with code %1$d</string>
+    <string name="network_error_message">Network error: %1$s</string>
+    <string name="analyzing_message">Analyzing your digital patterns\u2026</string>
+    <!-- Chart Labels -->
+    <string name="chart_pie">Pie Chart</string>
+    <string name="chart_bar">Bar Chart</string>
+    <string name="tap_chart_to_explore">Tap chart type to explore different views</string>
+    <string name="chart_no_data">No chart data available</string>
+    <string name="chart_loading">Generating visualization…</string>
+
+    <!-- Insight Messages -->
+    <string name="insight_success">✅ %1$d insights generated</string>
+    <string name="insight_empty">ℹ️ No patterns detected in this entry</string>
+    <string name="insight_network_error">🚨 Network error: %1$s</string>
+    <string name="insight_processing">Analyzing your digital patterns…</string>
+    <string name="insight_label_format">Label: %s</string>
+    <string name="insight_confidence_format">Confidence: %s%%</string>
+    <string name="no_usage_data">No usage data available.</string>
+    <string name="analysis_in_progress">Analyzing patterns...</string>
+
+    <!-- Trend Formatting -->
+    <string name="trend_date_format">MMM dd, yyyy</string>
+    <string name="trend_entry_format">• %1$s: %2$d</string>
+    <string name="trend_saved">Trend data saved</string>
+    <string name="trend_loading">Loading historical patterns…</string>
+
+    <!-- Accessibility -->
+    <string name="content_desc_pie_chart">Emotional pattern pie chart</string>
+    <string name="content_desc_bar_chart">Emotional pattern bar chart</string>
+    <string name="content_desc_insight_list">List of behavioral insights</string>
+    <string name="content_desc_mood_input">Enter your current mood</string>
+    <string-array name="reflection_tags">
+        <item>-- No Tag --</item>
+        <item>Gratitude</item>
+        <item>Stress</item>
+        <item>Distraction</item>
+        <item>Accomplishment</item>
+        <item>Overwhelm</item>
+        <item>Focus</item>
+    </string-array>
+
+    <!-- API Context Keys -->
+    <string name="context_source">source</string>
+    <string name="context_ideal_self">ideal_self</string>
+    <string name="context_goals">goals</string>
+    <string name="context_manual_input">manual_input</string>
+    <string name="notification_service_name">Guardian AI Notification Access</string>
+    <!-- Pluralization -->
+    <plurals name="insight_count">
+        <item quantity="one">1 insight</item>
+        <item quantity="other">%d insights</item>
+    </plurals>
+</resources>

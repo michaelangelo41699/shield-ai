@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/transparent"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- Alignment Color Bar -->
+        <View
+            android:id="@+id/alignmentBar"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginBottom="12dp"
+            android:background="@color/green" />
+
+        <!-- Label -->
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/insight_label"
+            android:layout_marginBottom="4dp"
+            tools:text="Insecurity Pattern Detected" />
+
+        <!-- Confidence -->
+        <TextView
+            android:id="@+id/confidenceText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/confidence_default"
+            android:layout_marginBottom="4dp"
+            tools:text="Confidence: 0.92" />
+
+        <!-- App Type (Risk/Wellness) -->
+        <TextView
+            android:id="@+id/appTypeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="2dp"
+            tools:text="App Type: Risk App" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/categoryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="2dp"
+            tools:text="Category: Comparison Dysphoria" />
+
+        <!-- Expansion Panel -->
+        <LinearLayout
+            android:id="@+id/insightExpansionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/patternText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pattern: N/A"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                tools:text="Pattern: Doomscrolling Loop" />
+
+            <TextView
+                android:id="@+id/sourceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source: App"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                tools:text="Source: App (Instagram)" />
+
+            <TextView
+                android:id="@+id/misalignmentText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aligned"
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                tools:text="Misalignment: Confidence Drift" />
+
+            <TextView
+                android:id="@+id/timestampText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: ..."
+                android:textSize="14sp"
+                android:layout_marginBottom="4dp"
+                tools:text="Time: Jun 29, 2025 7:30 PM" />
+        </LinearLayout>
+
+        <!-- Quick-Action Buttons -->
+        <LinearLayout
+            android:id="@+id/quickActionsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/refocusButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Refocus Now"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/swapAppButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Swap App"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/reminderButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Set Reminder"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

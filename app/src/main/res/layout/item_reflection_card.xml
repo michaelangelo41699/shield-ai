@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="16dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/cardReflectionContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reflection content goes here..."
+            android:textSize="16sp"
+            android:textColor="#222222"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/cardReflectionTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag: --"
+            android:textSize="14sp"
+            android:textColor="#555555"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/cardReflectionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="12sp"
+            android:textColor="#888888" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

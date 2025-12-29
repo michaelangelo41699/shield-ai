@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/driftDay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day 1: 🟢"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/driftDay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day 2: 🟡"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/driftDay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Day 3: 🔴"
+        android:textSize="14sp" />
+</LinearLayout>
