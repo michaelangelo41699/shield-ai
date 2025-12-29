@@ -1,34 +1,63 @@
-# Gradle files
-.gradle/
-build/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
-
-# IntelliJ
+# =========================
+# Android / IntelliJ
+# =========================
 *.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
 
-# Keystore files
-*.jks
-*.keystore
+# =========================
+# Kotlin / Android builds
+# =========================
+*.apk
+*.aab
+*.dex
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# =========================
+# Python / Guardian AI
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+venv/
+.venv/
 
-# Android Profiling
-*.hprof
+# =========================
+# ML / Model Artifacts
+# =========================
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+models/checkpoints/
+guardian_model/
+trained_models/
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+logs/
+tmp/
+
+# =========================
+# Datasets (real data)
+# =========================
+datasets/raw/
+datasets/private/
+*.csv
+*.parquet
+
+# =========================
+# OS
+# =========================
+Thumbs.db
