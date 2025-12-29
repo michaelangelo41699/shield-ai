@@ -1,0 +1,76 @@
+# Shield AI — Roadmap
+
+This roadmap distinguishes between
+what is already built, what is in progress,
+and what is intentionally deferred.
+
+---
+
+## ✅ Built / Implemented
+
+### Android App
+- Notification logging
+- App usage tracking
+- Mood & reflection inputs
+- Insight display components
+
+### Guardian Logger
+- Structured behavioral event logging
+- Time-based pattern aggregation
+- Local-first data handling
+
+### Guardian AI
+- Emotional inference models
+- Persuasion & manipulation detection
+- Alignment analysis framework
+- Guardian Voice fine-tuned prototype
+
+---
+
+## 🚧 In Progress
+
+### Insight Quality
+- Reducing hallucination
+- Improving grounding to real signals
+- Better separation of creative vs reflective responses
+
+### Proactive Interventions
+- Non-intrusive interruption logic
+- Timing-based interventions (not constant)
+- User-defined boundaries
+
+### Model Improvements
+- Cleaner training data schemas
+- Better label balance
+- Reduced stylistic bleed-through
+
+---
+
+##  Planned
+
+### On-Device Inference
+- Quantized Guardian Voice
+- Partial offline operation
+- Hybrid cloud / local execution
+
+### iOS Research Path
+- Screen Time + Notification summaries
+- Network-level metadata analysis
+- User-consented manual data imports
+
+### Long-Term Features
+- Weekly self-awareness reports
+- Drift trend visualization
+- Goal-alignment forecasting
+- Community research mode (opt-in)
+
+---
+
+##  Intentionally Not Planned
+
+- Ad targeting
+- Data resale
+- Behavioral scoring for employers
+- Social ranking or gamification
+
+Shield will grow — but it will not compromise its purpose.
