@@ -1,0 +1,91 @@
+# Shield AI — Architecture Overview
+
+Shield is built as a layered system that separates
+data collection, analysis, and reflection.
+
+This separation is intentional — it protects privacy,
+maintains explainability, and prevents overreach.
+
+---
+
+## High-Level Architecture
+
+[ Android Device ]
+      ↓
+Guardian Logger (Local)
+      ↓
+Guardian Insight Engine
+      ↓
+Guardian AI / Guardian Voice
+      ↓
+User Reflection Interface
+
+---
+
+## Core Layers
+
+###  1. Android App (Client Layer)
+
+Responsibilities:
+- Collect behavioral signals (notifications, app usage, time patterns)
+- Allow manual user reflections (journaling, mood check-ins)
+- Display insights, reflections, and summaries
+- Handle permissions and privacy controls
+
+Key Principle:
+> Raw data stays on-device whenever possible.
+
+---
+
+### 🧾 2. Guardian Logger (Observation Layer)
+
+Responsibilities:
+- Capture **events**, not raw content
+- Normalize inputs into structured behavioral logs
+- Tag events with time, context, and category
+
+Examples:
+- “User received 37 notifications in 2 hours”
+- “User opened social media during focus window”
+- “Repeated exposure to comparison-based content”
+
+No personal messages, passwords, or private text is stored.
+
+---
+
+###  3. Guardian Insight Engine (Interpretation Layer)
+
+Responsibilities:
+- Pattern detection (distraction loops, comparison cycles, anxiety triggers)
+- Emotional inference (stress, motivation, fatigue, focus)
+- Alignment analysis (behavior vs stated goals)
+
+This layer is largely deterministic + ML-based,
+producing **explainable signals**.
+
+---
+
+###  4. Guardian AI / Guardian Voice (Reasoning Layer)
+
+Responsibilities:
+- Convert signals into human-understandable insights
+- Provide psychological framing and reflection
+- Ask meaningful questions that promote awareness
+- Adapt tone based on emotional context
+
+Hybrid approach:
+- Lightweight classifiers → fast detection
+- LLM reasoning → nuance, empathy, insight
+
+---
+
+## Why This Architecture Matters
+
+- Privacy-first by design
+- Modular and auditable
+- Prevents “black box” manipulation
+- Enables future on-device inference
+- Allows Guardian to intervene **without spying**
+
+Shield is intentionally not a monolith.
+Each layer has boundaries — just like a healthy mind.
